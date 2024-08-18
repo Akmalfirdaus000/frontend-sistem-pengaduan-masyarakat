@@ -15,16 +15,24 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.embla {
+  overflow: hidden;
 }
+
+.embla__viewport {
+  width: 100%;
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+  flex: 1 0 100%;
+  position: relative;
+}
+
 
 @layer utilities {
   .text-balance {
